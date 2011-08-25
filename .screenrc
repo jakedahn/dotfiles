@@ -1,0 +1,11 @@
+##The way screens/windows look
+fit
+startup_message off
+hardstatus alwayslastline " %{= kK} %-w%{+b W}%n %t%{-}%+w%=%{+b W} [ %H %l ]"
+defscrollback 5000
+#
+##Scrollback
+termcapinfo xterm ti@:te@
+#
+##Screen flash
+vbell off
