@@ -1,6 +1,8 @@
-" Use Vim settings, rather than Vi settings
+" Allow filetype-specific plugins
 filetype on
 filetype plugin on
+filetype plugin indent on
+
 set backspace=2
 set nocompatible
 set modeline
