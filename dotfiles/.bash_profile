@@ -1,6 +1,7 @@
 alias ll="ls -l"
 alias la="ls -al"
 alias tailf="tail -f"
+alias cd..="cd .."
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
