@@ -11,7 +11,7 @@ def parse_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('-p', '--passwords', required=True,
                         help='Text file of sensitive data (key/value)')
-    parser.add_argument('-i', '--install', default='~',
+    parser.add_argument('-i', '--install-dir', default='~',
                         help='Directory into which dotfiles will be installed')
     parser.add_argument('--dry-run', default=False, action='store_true',
                         help='Skip file installation and leave staging dir')
@@ -120,5 +120,5 @@ if __name__ == '__main__':
     if options.dry_run:
         print 'Success - dotfiles not installed'
     else:
-        install_dotfiles(staging_dir, options.install)
-        print 'Success - dotfiles installed to %s' % options.install
+        install_dotfiles(staging_dir, options.install_dir)
+        print 'Success - dotfiles installed to %s' % options.install_dir
