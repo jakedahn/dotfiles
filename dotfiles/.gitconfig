@@ -1,0 +1,9 @@
+[user]
+    name = Brian Waldon
+    email = bcwaldon@gmail.com
+[github]
+    user = bcwaldon
+    password = %(github_password)s
+    token = %(github_token)s
+[gitreview]
+    username = bcwaldon
