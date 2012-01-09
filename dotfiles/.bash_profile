@@ -12,5 +12,4 @@ function parse_git_branch {
 
 export PS1='\[\e[1;32m\][\W\[\e[1;31m\]$(parse_git_branch)\[\e[0m\]\[\e[1;32m\]]\$\[\e[0m\] '
 
-
-export PATH=$PATH:/usr/local/sbin:/usr/local/Cellar/python/*/bin
+export PATH=$PATH:/usr/local/sbin:/usr/local/Cellar/python/*/bin:/usr/local/share/python
