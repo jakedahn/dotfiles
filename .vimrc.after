@@ -1,0 +1,13 @@
+color molokai
+
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show unicode glyphs
+
+set guifont=Menlo\ for\ Powerline:h14
+set listchars=tab:▸\ ,eol:¬
+
+let g:Powerline_symbols = 'fancy'
+
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
