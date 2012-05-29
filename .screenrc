@@ -1,62 +1,62 @@
-#--------------------------------------------------------------------
-# $Id: screenrc,v 1.7 2007/10/08 19:01:09 drscream Exp $
-# Copyright 2007 Frubar Network (drscream@frubar.net)
-#--------------------------------------------------------------------
-
-# DEFAULT
-shell			bash
-autodetach		on
-defutf8     	on
-deflogin    	off
-startup_message	off
-nethack			on
-
-activity	"activity in %n (%t)"
-bell_msg	"bell in %n (%t)"
-defhstatus	"screen: ^En (^Et)"
-shelltitle	"$ |sh:"
-
-vbell		on
-vbell_msg	"WHAT ??!!"
-vbellwait	1
-
-msgminwait	1
-msgwait		3
-
-#hardcopy_append on
-#hardcopydir ~/.screen
-
-windowlist title	" Num%+3=| Fl%+3=| Name"
-windowlist string	" %3n%+3=| %f%+3=| %t"
-
-zombie		^D^C
-escape		^Aa
-termcapinfo	xterm|xterm-256color|xterms|xs|rxvt ti@:te@
-
-#idle 600 blanker
-#blankerprg nice -n 19 cmatrix -abu9
-
-# BINDINGS
-bind ^r	source "${HOME}/.screenrc"
-bind ^e	escape ^Xx
-bind ^y	escape ^Aa
-bind ^x	lockscreen
-bind o	copy
-bind p	paste .
-bind .	number
-bind l	lastmsg
-bind w	windowlist -b
-bind r	resize
-bind s	select
-bind >	split
-bind <	remove
-bind ^f	focus down
-bind =	resize =
-bind +	resize +5
-bind -	resize -5
-bind ~	resize max
-
-
-# STATUSPANEL
-hardstatus alwayslastline                                                                                                                          
-hardstatus string '%{= kY}[ %{R}%H %{Y}][ %{g}load[%l] %{Y}][ %{B}%d/%m/%Y %c %{Y}][ %{r}%=%?%-w%?(%n%f %t)%?%+w%? %{Y}]'
+# #--------------------------------------------------------------------
+# # $Id: screenrc,v 1.7 2007/10/08 19:01:09 drscream Exp $
+# # Copyright 2007 Frubar Network (drscream@frubar.net)
+# #--------------------------------------------------------------------
+# 
+# # DEFAULT
+# shell     bash
+# autodetach    on
+# defutf8       on
+# deflogin      off
+# startup_message off
+# nethack     on
+# 
+# activity  "activity in %n (%t)"
+# bell_msg  "bell in %n (%t)"
+# defhstatus  "screen: ^En (^Et)"
+# shelltitle  "$ |sh:"
+# 
+# vbell   on
+# vbell_msg "WHAT ??!!"
+# vbellwait 1
+# 
+# msgminwait  1
+# msgwait   3
+# 
+# #hardcopy_append on
+# #hardcopydir ~/.screen
+# 
+# windowlist title  " Num%+3=| Fl%+3=| Name"
+# windowlist string " %3n%+3=| %f%+3=| %t"
+# 
+# zombie    ^D^C
+# escape    ^Aa
+# termcapinfo xterm|xterm-256color|xterms|xs|rxvt ti@:te@
+# 
+# #idle 600 blanker
+# #blankerprg nice -n 19 cmatrix -abu9
+# 
+# # BINDINGS
+# bind ^r source "${HOME}/.screenrc"
+# bind ^e escape ^Xx
+# bind ^y escape ^Aa
+# bind ^x lockscreen
+# bind o  copy
+# bind p  paste .
+# bind .  number
+# bind l  lastmsg
+# bind w  windowlist -b
+# bind r  resize
+# bind s  select
+# bind >  split
+# bind <  remove
+# bind ^f focus down
+# bind =  resize =
+# bind +  resize +5
+# bind -  resize -5
+# bind ~  resize max
+# 
+# 
+# # STATUSPANEL
+# hardstatus alwayslastline                                                                                                                          
+# hardstatus string '%{= kY}[ %{R}%H %{Y}][ %{g}load[%l] %{Y}][ %{B}%d/%m/%Y %c %{Y}][ %{r}%=%?%-w%?(%n%f %t)%?%+w%? %{Y}]'
