@@ -2,13 +2,11 @@
 
 # update and install base packages
 sudo apt-get update
-sudo apt-get install rake git zsh -y
+sudo apt-get install ruby1.9.3 rake git zsh -y
 
 # install oh my zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-# chsh is broken for the ubuntu user, manually updating this is the way to go apparently.
-sudo sed -i 's/ubuntu:x:1000:1000:Ubuntu:\/home\/ubuntu:\/bin\/bash/ubuntu:x:1000:1000:Ubuntu:\/home\/ubuntu:\/bin\/zsh/g' /etc/passwd
 
 # install janus
 curl -Lo- https://bit.ly/janus-bootstrap | bash
@@ -23,3 +21,4 @@ cp -r ./dotfiles/.* ~/
 # echo at end
 
 echo "Everything has been installed.\n"
+echo "## NOTE: You should now run: chsh -s /bin/zsh"
