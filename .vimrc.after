@@ -11,4 +11,6 @@ let g:Powerline_symbols = 'compatible'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=black
+set cursorline!
+highlight ColorColumn ctermbg=235
+highlight CursorLine  ctermbg=235
