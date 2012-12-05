@@ -14,7 +14,17 @@ git clone https://github.com/scrooloose/syntastic.git ~/.janus/syntastic
 git clone https://github.com/Lokaltog/vim-powerline.git ~/.janus/vim-powerline
 
 # install dotfiles
-cp -r ./.* ~/
+cp -r .gitconfig ~/.gitconfig
+cp -r .gitignore ~/.gitignore
+cp -r .git ~/.git
+cp -r .zshrc ~/.zshrc
+cp -r .oh-my-zsh ~/.oh-my-zsh
+cp -r .screenrc ~/.screenrc
+cp -r .vimrc.after ~/.vimrc.after
+cp -r .vimrc ~/.vimrc
+cp -r .vim ~/.vim
+cp -r .janus ~/.janus
+
 
 # echo at end
 echo "Everything has been installed.\n"
