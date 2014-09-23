@@ -2,7 +2,6 @@
 
 rm -rf ~/.gitconfig
 rm -rf ~/.gitignore
-rm -rf ~/.git
 rm -rf ~/.zshrc
 rm -rf ~/.oh-my-zsh
 rm -rf ~/.screenrc
