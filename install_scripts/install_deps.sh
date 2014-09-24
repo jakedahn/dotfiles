@@ -18,7 +18,7 @@ fi
 if [ -f /etc/lsb-release ]; then
     sudo apt-get update
     sudo apt-get install -y ruby2.0 git zsh mercurial sqlite tmux nmap \
-                            build-essential
+                            build-essential htop mosh
 
     curl -sSL https://get.rvm.io | bash -s stable --ruby
     rvm install 2.1
