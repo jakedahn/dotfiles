@@ -18,3 +18,5 @@ cp -r .janus ~/.janus
 
 echo "Everything has been installed.\n"
 echo "## NOTE: You should now run: chsh -s /bin/zsh"
+
+chsh -s /bin/zsh

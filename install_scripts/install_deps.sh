@@ -16,6 +16,8 @@ fi
 ##############################################################################
 
 if [ -f /etc/lsb-release ]; then
+    sudo chmod 777 /usr/bin/chsh
+
     sudo apt-get update
     sudo apt-get install -y ruby2.0 git zsh mercurial sqlite tmux nmap \
                             build-essential htop mosh curl wget
