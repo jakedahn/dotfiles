@@ -38,5 +38,11 @@ source $ZSH/oh-my-zsh.sh
 export TERM=xterm-256color
 alias nsv='source .venv/bin/activate'
 
+# GoLang
+export GOROOT=$HOME/.go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin
