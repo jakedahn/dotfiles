@@ -4,6 +4,8 @@
 ./install_scripts/janus.sh
 ./install_scripts/tmux_tony.sh
 ./install_scripts/oh-my-zsh.sh
+./rubylang.sh
+./golang.sh
 
 # install dotfiles
 cp -r .gitconfig ~/.gitconfig
