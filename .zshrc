@@ -37,6 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 export TERM=xterm-256color
 alias nsv='source .venv/bin/activate'
+alias pwdc='echo "cd `pwd`" | pbcopy -c'
 
 # GoLang
 export GOROOT=$HOME/.go
