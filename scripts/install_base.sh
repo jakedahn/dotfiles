@@ -12,7 +12,6 @@ sudo apt-get install -y \
   htop \
   jq \
   mtr \
-  ncat \
   nmap \
   python \
   python-pip \
@@ -27,4 +26,4 @@ sudo apt-get install -y \
   wget \
   wireshark \
   xsel \
-  zsh \
+  zsh
