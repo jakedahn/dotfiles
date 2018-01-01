@@ -14,3 +14,4 @@ linux dotfiles
 * pia vpn
 * whatsapp-desktop
 * spotify
+* source sans pro font
