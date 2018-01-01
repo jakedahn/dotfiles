@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 ./scripts/install_base.sh
 ./scripts/janus.sh
 ./scripts/oh-my-zsh.sh
