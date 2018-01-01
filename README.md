@@ -1,4 +1,16 @@
 dotfiles
 ========
 
-dotfiles for MacOS + Ubuntu
+linux dotfiles
+
+### TODO:
+
+* add atom
+* inkdrop
+* burpsuite
+* firefox
+* chrome
+* nodejs
+* pia vpn
+* whatsapp-desktop
+* spotify

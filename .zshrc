@@ -1,49 +1,18 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras sublime vim docker)
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_THEME="robbyrussell"
+plugins=(git git-extras django pip python redis-cli systemd vagrant yarn)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-
+export PATH=/opt/local/bin:/opt/local/sbin:/opt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
+export EDITOR=/usr/bin/vim
 export TERM=xterm-256color
+
 alias nsv='source .venv/bin/activate'
-alias pwdc='echo "cd `pwd`" | pbcopy -c'
+alias pwdc='echo "cd `pwd`" | xsel --clipboard'
+alias dpyc='find . -name "*.pyc" -exec rm -rf {} \;'
+alias dpycache='find . -name "*__pycache__" -exec rm -rf {} \;'
+alias ne='PATH=$(npm bin):$PATH' # This lets us run locally installed node binaries (within the node_modules)
 
-# GoLang
-export GOROOT=$HOME/.go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin
+# This pretty-prints the contents of a jwt.
+alias jwt="tr '.' '\n' | head -n2 | awk '{ a=0; while (a++<length(\$0) % 4) s=s \"=\"; print \$0 s }' | base64 --decode | jq"

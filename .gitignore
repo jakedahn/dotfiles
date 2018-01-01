@@ -44,12 +44,4 @@ development.sqlite3
 wp-content.php
 *.pyc
 *local_settings.py
-
-
-*.egg-info
-*.dashboard-venv
-.coverage
-.environment_version
-.horizon-venv
 .venv
-.coverage*
