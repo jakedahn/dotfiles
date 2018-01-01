@@ -23,6 +23,7 @@ sudo apt-get install -y \
   screen \
   sqlite \
   tmux \
+  vim \
   wget \
   wireshark \
   xsel \
