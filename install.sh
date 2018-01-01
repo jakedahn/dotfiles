@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-./install_scripts/install_base.sh
-./install_scripts/janus.sh
-./install_scripts/oh-my-zsh.sh
-./install_scripts/fonts.sh
-./install_scripts/gnome-terminal.sh
+./scripts/install_base.sh
+./scripts/janus.sh
+./scripts/oh-my-zsh.sh
+./scripts/fonts.sh
+./scripts/gnome-terminal.sh
 
 # install dotfiles
 cp -r .gitconfig ~/.gitconfig
