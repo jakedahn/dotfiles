@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cat <<EOT >> /tmp/gnome-terminal.dconf
+cat <<EOT > /tmp/gnome-terminal.dconf
 [/]
 foreground-color='#c0c5ce'
 rewrap-on-resize=true
@@ -18,4 +18,8 @@ background-color='#2b303b'
 scrollback-lines=50000
 EOT
 
-dconf load /org/gnome/terminal/legacy/profiles:/:db8d5243-5ae3-4463-9573-99f7e92ee079/ < /tmp/gnome-terminal.dconf
+# Get the gnome terminal default profile id
+profile_id="$(gsettings get org.gnome.Terminal.ProfilesList default)"
+profile_id="${profile_id:1:-1}" # strips single quotes from uuid
+
+dconf load /org/gnome/terminal/legacy/profiles:/:$profile_id/ < /tmp/gnome-terminal.dconf
