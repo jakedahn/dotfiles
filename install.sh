@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
+set -e
+
+# We want to setup the apt mirrors first.
+./scripts/mirrors.sh
+
 ./scripts/install_base.sh
 ./scripts/janus.sh
 ./scripts/oh-my-zsh.sh
 ./scripts/fonts.sh
 ./scripts/gnome-terminal.sh
+./scripts/atom.sh
+./scripts/chrome.sh
+./scripts/inkdrop.sh
+./scripts/slack.sh
+./scripts/spotify.sh
+./scripts/whatsapp.sh
 
 # install dotfiles
 cp -r .gitconfig ~/.gitconfig
