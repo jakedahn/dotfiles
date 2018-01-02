@@ -10,7 +10,6 @@
 cp -r .gitconfig ~/.gitconfig
 cp -r .gitignore ~/.gitignore
 cp -r .zshrc ~/.zshrc
-cp -r .oh-my-zsh ~/.oh-my-zsh
 cp -r .vimrc.after ~/.vimrc.after
 cp -r .vimrc ~/.vimrc
 cp -r .vim ~/.vim
