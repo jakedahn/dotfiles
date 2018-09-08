@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-sudo add-apt-repository ppa:webupd8team/atom -y
-sudo apt-get update
-sudo apt-get install atom -y
+TMPDIR="`mktemp -d`"
+DEB_DEST="${TMPDIR}/atom.deb"
+echo "Downloading deb to $DEB_DEST"
+curl -L https://atom.io/download/deb -o $DEB_DEST
+echo "Installing new deb"
+sudo dpkg -i $DEB_DEST
 
